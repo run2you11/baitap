@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web của tôi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #aa1818;
+        }
+
+        /* Wrapper */
+        .wrapper {
+            max-width: 960px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(175, 165, 165, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center; /* Căn giữa menu */
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: inline-block; /* Hoặc sử dụng flexbox nếu muốn */
+        }
+        
+
+        .menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 25%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        aside h2 {
+            margin-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        aside li a:hover {
+            color: #007bff;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+        }
+
+        .ct1, .ct2 {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .ct1 h2, .ct2 h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Trang Thông Tin Chính Thức</h1>
+            <p>Một đoạn mô tả ngắn về trang web của bạn.</p>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#"><i class="fas fa-home"></i> Trang Chủ</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> Giới Thiệu</a></li>
+                <li><a href="#"><i class="fas fa-images"></i> Sản Phẩm</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i> Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <aside>
+                <h2>Danh Mục</h2>
+                <ul>
+                    <li><a href="#">Danh mục 1</a></li>
+                    <li><a href="#">Danh mục 2</a></li>
+                    <li><a href="#">Danh mục 3</a></li>
+                </ul>
+            </aside>
+
+            <div class="main-content">
+                <section class="ct1">
+                    <h2>Bài viết mới nhất</h2>
+                    <p>Nội dung bài viết mới nhất sẽ hiển thị ở đây.</p>
+                </section>
+
+                <section class="ct2">
+                    <h2>Sản phẩm nổi bật</h2>
+                    <p>Một số sản phẩm nổi bật sẽ được giới thiệu ở đây.</p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Trang web của tôi</p>
+        </footer>
+    </div>
+</body>
+
+</html>
